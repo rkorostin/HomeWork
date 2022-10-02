@@ -3,12 +3,12 @@
 Console.WriteLine("Введите число: ");
 string userInput = Console.ReadLine() ?? "";
 int num = int.Parse(userInput);
-int count = -1;
+int count = 1;
 
 Console.Write(num + " -> ");
-while (count < num - 1)
+while (count <= num)
 {
-    count += 2;
     Console.Write(count + " ");
-}
+    count += 2;
+    }
 
