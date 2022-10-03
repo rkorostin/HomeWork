@@ -7,7 +7,7 @@ void FillArray(int[] elements)
 
     while (index1 < N1)
     {
-        elements[index1] = new Random().Next(1, 100);
+        elements[index1] = new Random().Next(1, 10);
         index1++;
     }
 }
@@ -16,15 +16,17 @@ void PrintArray(int[] elements2)
 {
     int N2 = elements2.Length;
     int index2 = 0;
+    Console.Write("Массив {");
 
     while (index2 < N2)
     {
-        Console.WriteLine(elements2[index2]);
+        Console.Write(" " + elements2[index2]);
         index2++;
     }
+    Console.Write(" }");
 }
 
-int[] array = new int[4];
+int[] array = new int[6];
 int N = array.Length;
 int index = 0;
 int iMax = 0;
@@ -61,7 +63,7 @@ while (index2 < N)
     }
 }
 
-Console.WriteLine("Минимальный ин = " + array[iMin] + " Максимальный ин = " + array[iMax]);
+Console.WriteLine(" Минимальный = " + array[iMin] + " Максимальный = " + array[iMax]);
 
 int Sum = 0;
 
@@ -75,8 +77,7 @@ while ((N - iMax) < (N - iMin))
     else
     {
         iMin++;
-    }
-Console.WriteLine(Sum);   
+    }  
 }
 while ((iMax + 1) < iMin)
     {
@@ -84,6 +85,6 @@ while ((iMax + 1) < iMin)
         iMax++;
     }
 
-Console.WriteLine(Sum);
+Console.WriteLine("Сумма между min и max -> " + Sum);
 
 
