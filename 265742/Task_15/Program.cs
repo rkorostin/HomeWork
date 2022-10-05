@@ -14,10 +14,5 @@ while (true)
     Console.WriteLine($"Ошибка ввода! Попробуйте снова ввести любое число от 1 до 7");
 }
 
-if (Number == 1) Console.WriteLine($"{Number} -> Нет");
-else if (Number == 2) Console.WriteLine($"{Number} -> Нет");
-else if (Number == 3) Console.WriteLine($"{Number} -> Нет");
-else if (Number == 4) Console.WriteLine($"{Number} -> Нет");
-else if (Number == 5) Console.WriteLine($"{Number} -> Нет");
-else if (Number == 6) Console.WriteLine($"{Number} -> Да");
-else if (Number == 7) Console.WriteLine($"{Number} -> Да"); 
+if (6 <= Number && Number <= 7) Console.WriteLine($"{Number} -> Да");
+else if (0 < Number && Number < 6) Console.WriteLine($"{Number} -> Нет");
