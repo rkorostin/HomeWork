@@ -1,5 +1,4 @@
-﻿/* Задача 27: Напишите программу, которая принимает на вход число и выдаёт
-сумму цифр в числе.
+﻿/*
 452 -> 11
 82 -> 10
 9012 -> 12
@@ -11,7 +10,7 @@
 Console.Clear();
 
 int number = GetNumberByUser("Введите число: ", "Ошибка! Нужно ввести любое целое положительное число!");
-SumNumber(number);
+sumNumbers(number);
 // -------------------------- Конец программы --------------------------------------
 
 // -------------------------- Определение методов ----------------------------------
@@ -28,7 +27,19 @@ int GetNumberByUser(string message, string errorMessage)
         Console.WriteLine(errorMessage); // В случае ошибки выводит в консоль сообщение errorMessage
     }
 }
-
+// Создание метода sumNumbers для подсчёта суммы цифр в числе.
+int sumNumbers(int number)
+{
+    int result = 0;
+    while (number > 0)
+    {
+        result += number % 10;
+        number = number / 10;
+    }
+    Console.WriteLine($"Сумма цифр -> {result}");
+    return result;
+}
+/*
 // Создание метода CountNumber для подсчёта разрядности введённого числа  
 int CountNumber(int number)
 {
@@ -55,4 +66,5 @@ int SumNumber(int number)
     Console.WriteLine($"Сумма цифр -> {result}");
     return result;
 }
+*/
 // -------------------------- Конец определения методов ----------------------------
