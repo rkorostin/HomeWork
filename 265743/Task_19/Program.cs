@@ -17,7 +17,7 @@ while (true)
     Console.WriteLine($"Ошибка ввода! Попробуйте снова ввести любое число от 10000 до 99999");
 }
 
-if (Number / 10000==Number % 10 || (Number / 1000) % 10==(Number / 10) % 10) Console.WriteLine($"{Number} -> да");
+if (Number / 10000==Number % 10 && (Number / 1000) % 10==(Number / 10) % 10) Console.WriteLine($"{Number} -> да");
 else Console.WriteLine($"{Number} -> нет");
 
 
