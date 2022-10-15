@@ -9,7 +9,7 @@ int userInput = GetNumberForLengthArray("Сколько элементов бу�
 // Создаём массив с количеством элементов, которые указал пользователь
 int[] array = new int[userInput];
 // Заполняем созданный массив рандомными числами (от 100 до 999)
-FillRndArray(array, userInput);
+FillRndArray(array);
 // Подсчитываем сколько в массиве чётных чисел
 GetCountPrint(array);
 
@@ -26,7 +26,7 @@ int GetNumberForLengthArray(string message, string errorMessage)
     }
 }
 
-void FillRndArray(int[] array, int userInput)
+void FillRndArray(int[] array)
 {
     Console.Write("[");
     for (int index = 0; index < (array.Length - 1); index++)
