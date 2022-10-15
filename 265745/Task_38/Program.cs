@@ -9,7 +9,7 @@ int userInput = GetNumberForLengthArray("Сколько элементов бу�
 // Создаём массив с количеством элементов, которые указал пользователь
 double[] array = new double[userInput];
 // Заполняем созданный массив рандомными вещественными числами (от -99 до 99).
-FillRndArray(array, userInput);
+FillRndArray(array);
 // Узнаём максимальный элемент массива
 GetМaxArray(array);
 // Узнаём минимальный элемент массива
@@ -31,7 +31,7 @@ int GetNumberForLengthArray(string message, string errorMessage)
     }
 }
 
-void FillRndArray(double[] array, int userInput)
+void FillRndArray(double[] array)
 {
     Console.Write("[");
     for (int index = 0; index < (array.Length - 1); index++)
