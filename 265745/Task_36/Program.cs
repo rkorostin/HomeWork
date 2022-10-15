@@ -10,7 +10,7 @@ int userInput = GetNumberForLengthArray("Сколько элементов бу�
 // Создаём массив с количеством элементов, которые указал пользователь
 int[] array = new int[userInput];
 // Заполняем созданный массив рандомными числами (от -5 до 5)
-FillRndArray(array, userInput);
+FillRndArray(array);
 // Подсчитываем сумму элементов на нечётных позициях
 GetSumOddInxPrint(array);
 
@@ -27,7 +27,7 @@ int GetNumberForLengthArray(string message, string errorMessage)
     }
 }
 
-void FillRndArray(int[] array, int userInput)
+void FillRndArray(int[] array)
 {
     Console.Write("[");
     for (int index = 0; index < (array.Length - 1); index++)
