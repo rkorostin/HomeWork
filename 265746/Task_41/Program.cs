@@ -37,7 +37,7 @@ void FillandPrintArray(int[] array)
     Console.Write(String.Join(", ", array));
 }
 
-//Для обхода исключений при вводе пользователем чисел
+//Для обхода исключений при вводе пользователем не чисел
 int EnterElementsArray(int element, string errorMessage)
 {
     while (true)
