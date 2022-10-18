@@ -32,13 +32,13 @@ void FillandPrintArray(int[] array)
     for (int i = 0; i < array.Length; i++)
     {
         Console.Write($"Введите {i + 1}-ое число: ");
-        array[i] = EnterElementsArray(i, "Ошибка ввода! Введите любое целое число!");
+        array[i] = EnterNumbersForUser(i, "Ошибка ввода! Введите любое целое число!");
     }
     Console.Write(String.Join(", ", array));
 }
 
 //Для обхода исключений при вводе пользователем не чисел
-int EnterElementsArray(int element, string errorMessage)
+int EnterNumbersForUser(int number, string errorMessage)
 {
     while (true)
     {
