@@ -15,8 +15,8 @@ if (b2 != b1 && k1 == k2) Console.Write("Cистема не имеет реше�
 else if (b2 == b1 && k1 == k2) Console.Write("Cистема имеет бесконечное множество решений -> Две прямые совпали!");
 else
 {  
-    double X = GetFindX(k1, k2, b1, b2);
-    double Y = GetFindY(k2, b2, X);
+    double X = FindX(k1, k2, b1, b2);
+    double Y = FindY(k2, b2, X);
     Console.WriteLine($"Ответ: x={X}; y={Y};");
 }
 
@@ -35,13 +35,13 @@ double GetNumberByUser(string message, string errorMessage)
 }
 
 //Поиск х
-double GetFindX(double k1, double k2, double b1, double b2)
+double FindX(double k1, double k2, double b1, double b2)
 {
     double x = (b2 - b1) / (k1 - k2);
     return x;
 }
 //Поиск y
-double GetFindY(double k2, double b2, double X)
+double FindY(double k2, double b2, double X)
 {
     double y = k2 * X + b2;
     return y;
