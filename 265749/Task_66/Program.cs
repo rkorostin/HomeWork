@@ -13,7 +13,7 @@ else Console.WriteLine($"Сумма чисел между {from} и {to} -> 0");
 //Поиск суммы
 int GetSumIntervalNaturals(int inFrom, int inTo)
 {
-    return inFrom == inTo ? inTo : inFrom + GetSumIntervalNaturals(inFrom + 1, inTo);
+    return inFrom > inTo ? 0 : inFrom + GetSumIntervalNaturals(inFrom + 1, inTo);
 }
 
 //Запрашиваю число у пользовтеля
