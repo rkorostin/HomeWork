@@ -18,9 +18,9 @@ Console.WriteLine($"A({numA},{numB}) = {Akkerman(numA, numB)}");
 //Вычисления функции Аккермана с помощью рекурсии
 int Akkerman(int m, int n)
 {
-    if (m == 0) return n + 1; // 7 строка формулы
-    if (m > 0 && n == 0) return Akkerman(m - 1, 1); // 8 строка формулы
-    return Akkerman(m - 1, Akkerman(m, n - 1)); // 9 строка формулы
+    if (m == 0) return n + 1; // 8 строка формулы
+    if (m > 0 && n == 0) return Akkerman(m - 1, 1); // 9 строка формулы
+    return Akkerman(m - 1, Akkerman(m, n - 1)); // 10 строка формулы
 }
 
 //Запрашиваю у пользователя
